@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelGuru</title>
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <style>
+        body
+        {
+            overflow-x: hidden;
+        }
+
+        form {
+            width: 600px; 
+            margin-left: 25%;
+        }
+
+        .carousel-inner{
+            height: 91.5vh;
+        }
+
+        footer 
+        {
+            height: 100px;
+        }
+
+
+        @media screen and (max-width: 730px) {
+
+            .top-50
+            {
+                top: 35% !important;
+            }
+
+            form{
+                width: 90%;
+                margin-left: 5%;
+            }
+
+            footer 
+            {
+                width: 100%;
+                height: 200px
+            }
+
+            .d-flex {
+
+                display: block!important;
+                padding-left: 23%;
+
+            }
+
+            .copyright
+            {
+                display: block;
+                margin-right: 15%;
+            }
+
+        }
+
+        @media screen and (max-width: 450px)
+        {
+
+            .top-50
+            {
+                top: 65% !important;
+            }
+
+            .d-flex {
+
+                padding-left: 10%;
+
+            }
+
+            #absolutetext
+            {
+                color: black;
+            }
+
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+        <div class="container">
+          <a class="navbar-brand " href="#"><h1>TRAVEL<span class="text-warning">Guru</span></h1></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#destinations">Destinations</a>
+              </li>
+
+
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <section class="slider">
+
+        <div id="imageslider" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <img src="images/bali.jpeg" class="d-block w-100 h-100 img-fluid" alt="...">
+                </div>
+            
+                <div class="carousel-item">
+                    <img src="images/sydney.jpeg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/istanbul.jpeg" class="d-block w-100 h-100 img-fluid" alt="...">
+                </div>
+              
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#imageslider" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#imageslider" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+
+
+        <div id="bookingtext" class="position-absolute top-50 start-50 translate-middle text-light text-center">
+
+            <h2 id="absolutetext" class="pt-5">Book your dream destination now with just a click of button</h2>
+
+            <button class="btn btn-lg bg-warning text-secondary">BOOK NOW</button>
+
+        </div>
+
+
+
+
+    </section>
+
+
+
+
+
+    <!-- ------------------       about        ------------------- -->
+
+
+
+
+
+    <section class="text-center" id="about">
+
+        <h1 class=" m-4 mt-5"> <span class="border-bottom border-5">About Us</span></h1>
+
+        <div class="container mt-5">
+
+            <p class="fs-3 p-5 m-6 mt-5 text-info">
+
+                <span class="text-warning">"</span>Hi there! we the travel gurus organise the best trips of the most beutifull places around the world and we are very proud to say that our prices are very affordable compared to other well established tour organisers but we can assure that our service is as good as they can provide. So let us help to organise the most amazing trip of your life.<span class="text-warning">"</span>
+    
+            </p>
+
+        </div>
+        
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <!--   ----------------------         destinations         ------------------ -->
+
+
+    <section class="row justify-content-around" id="destinations">
+
+        <h1 class="text-center m-4 mt-5"> <span class="border-bottom border-5">Destinations</span></h1>
+
+        <div class="card p-3 m-4 col-3" style="width: 350px; height: 500px">
+
+            <a href="#" class="text-decoration-none text-dark">
+
+                <img src="images/bali.jpeg" alt="..." style="width: 100%; height: 200px;">
+
+                <h3 class="text-center mt-3">Bali - Indonesia</h3>
+
+                <div class="p-3">
+                    <p class="fw-bold">Services</p>
+
+                    <ul>
+                        <li>5-days hotel booking</li>
+                        <li>Fun activities around nearby islands</li>
+                        <li>Transport To-From airport</li>
+                        <li>Top class vip meals</li>
+                        
+                    </ul>
+
+                    <h5>
+                        <span class="text-warning">Price</span>: $500
+                    </h5>
+
+                </div>
+
+            </a>
+
+
+            
+            
+                
+        </div>
+
+
+
+        <div class="card p-3 m-4 col-3" style="width: 350px; height: 500px">
+
+            <a href="#" class="text-decoration-none text-dark">
+
+                <img src="images/istanbul.jpeg" alt="..." style="width: 100%; height: 200px;">
+
+                <h3 class="text-center mt-3">Bali - Indonesia</h3>
+
+                <div class="p-3">
+                    <p class="fw-bold">Services</p>
+
+                    <ul>
+                        <li>5-days hotel booking</li>
+                        <li>Lots of fun activities</li>
+                        <li>Transport To-From airport</li>
+                        <li>Top class vip meals</li>
+                    </ul>
+
+                    <h5>
+                        <span class="text-warning">Price</span>: $500
+                    </h5>
+
+                </div>
+
+            </a>
+            
+                
+        </div>
+
+
+        <div class="card p-3 m-4 col-3" style="width: 350px; height: 500px">
+
+            <a href="#" class="text-decoration-none text-dark">
+
+                <img src="images/sydney.jpeg" alt="..." style="width: 100%; height: 200px;">
+
+                <h3 class="text-center mt-3">Bali - Indonesia</h3>
+
+                <div class="p-3">
+                    <p class="fw-bold">Services</p>
+
+                    <ul>
+                        <li>5-days hotel booking</li>
+                        <li>Lots of fun activities</li>
+                        <li>Transport To-From airport</li>
+                        <li>Top class vip meals</li>
+                    </ul>
+
+                    <h5>
+                        <span class="text-warning">Price</span>: $500
+                    </h5>
+
+                </div>
+
+            </a>
+            
+                
+        </div>
+
+
+
+        <div class="card p-3 m-4 col-3" style="width: 350px; height: 500px">
+
+            <a href="#" class="text-decoration-none text-dark">
+
+                <img src="images/london.jpeg" alt="..." style="width: 100%; height: 200px;">
+
+                <h3 class="text-center mt-3">Bali - Indonesia</h3>
+
+                <div class="p-3">
+                    <p class="fw-bold">Services</p>
+
+                    <ul>
+                        <li>5-days hotel booking</li>
+                        <li>Fun activities around nearby islands</li>
+                        <li>Transport To-From airport</li>
+                        <li>Top class vip meals</li>
+                    </ul>
+
+                    <h5>
+                        <span class="text-warning">Price</span>: $500
+                    </h5>
+
+                </div>
+
+            </a>
+            
+                
+        </div>
+
+
+
+      
+        
+
+    </section>
+
+    
+
+
+    <!--     ----------------------       contact       --------------------- -->
+
+
+    <section id="contact">
+
+        <div class="container mt-1">
+
+
+            <h1 class=" text-center m-4 mt-5"> <span class="border-bottom border-5">Contact Us</span></h1>
+
+
+            
+            <form >
+
+                <div class="form-group">
+                  <label class="text-warning mb-3 mt-3" for="fullname">Email address</label>
+                  <input type="text" class="form-control" id="fullname" aria-describedby="emailHelp" placeholder="Enter Name">
+                </div>
+
+                <div class="form-group">
+                  <label class="text-warning mb-3 mt-3" for="email">Password</label>
+                  <input type="email" class="form-control" id="email" placeholder="Enter email">
+                </div>
+
+                <div class="form-group">
+                    <label class="text-warning mb-3 mt-3" for="message">Message</label>
+                    <textarea type="text" class="form-control" id="message" aria-describedby="emailHelp" placeholder="Your Message"></textarea>
+                </div>
+
+                
+
+                <button type="submit" class="btn btn-md btn-warning mt-5 mb-5">Submit</button>
+            </form>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <footer class=" mt-5 bg-dark d-flex justify-content-around" >
+
+        <div class="navbar navbar-expand flex-start">
+
+            <ul class="navbar-nav">
+
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#">Home</a>
+                </li>
+    
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#about">About</a>
+                </li>
+    
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#destinations">Destinations</a>
+                </li>
+    
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#contact">Contact</a>
+                </li>
+    
+            </ul>
+
+        </div>
+        
+
+        <div class="copyright">
+
+            <p class="text-center text-light mt-4 pt-3"> All rights reserved &copy 2021, travelguru</p>
+
+        </div>
+       
+    </footer>
+
+    
+
+
+    <!-- bootstrap javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
